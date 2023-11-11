@@ -1,0 +1,377 @@
+{
+  "_jsontype_": "Labyrinth",
+  "tiles": [
+    [
+      {
+        "_jsontype_": "HexTile",
+        "a": 0,
+        "r": 0,
+        "c": 0
+      },
+      {
+        "_jsontype_": "TileType",
+        "type": "TileType.NORMAL"
+      }
+    ],
+    [
+      {
+        "_jsontype_": "HexTile",
+        "a": 1,
+        "r": -1,
+        "c": 0
+      },
+      {
+        "_jsontype_": "TileType",
+        "type": "TileType.START"
+      }
+    ],
+    [
+      {
+        "_jsontype_": "HexTile",
+        "a": 0,
+        "r": -1,
+        "c": 0
+      },
+      {
+        "_jsontype_": "TileType",
+        "type": "TileType.NORMAL"
+      }
+    ],
+    [
+      {
+        "_jsontype_": "HexTile",
+        "a": 1,
+        "r": -1,
+        "c": -1
+      },
+      {
+        "_jsontype_": "TileType",
+        "type": "TileType.WALL"
+      }
+    ],
+    [
+      {
+        "_jsontype_": "HexTile",
+        "a": 0,
+        "r": -1,
+        "c": 1
+      },
+      {
+        "_jsontype_": "TileType",
+        "type": "TileType.WALL"
+      }
+    ],
+    [
+      {
+        "_jsontype_": "HexTile",
+        "a": 0,
+        "r": -1,
+        "c": -1
+      },
+      {
+        "_jsontype_": "TileType",
+        "type": "TileType.NORMAL"
+      }
+    ],
+    [
+      {
+        "_jsontype_": "HexTile",
+        "a": 0,
+        "r": -1,
+        "c": -2
+      },
+      {
+        "_jsontype_": "TileType",
+        "type": "TileType.NORMAL"
+      }
+    ],
+    [
+      {
+        "_jsontype_": "HexTile",
+        "a": 1,
+        "r": -1,
+        "c": -2
+      },
+      {
+        "_jsontype_": "TileType",
+        "type": "TileType.WALL"
+      }
+    ],
+    [
+      {
+        "_jsontype_": "HexTile",
+        "a": 0,
+        "r": 0,
+        "c": 1
+      },
+      {
+        "_jsontype_": "TileType",
+        "type": "TileType.WALL"
+      }
+    ],
+    [
+      {
+        "_jsontype_": "HexTile",
+        "a": 1,
+        "r": -1,
+        "c": 1
+      },
+      {
+        "_jsontype_": "TileType",
+        "type": "TileType.NORMAL"
+      }
+    ],
+    [
+      {
+        "_jsontype_": "HexTile",
+        "a": 1,
+        "r": -1,
+        "c": 2
+      },
+      {
+        "_jsontype_": "TileType",
+        "type": "TileType.NORMAL"
+      }
+    ],
+    [
+      {
+        "_jsontype_": "HexTile",
+        "a": 0,
+        "r": 0,
+        "c": 2
+      },
+      {
+        "_jsontype_": "TileType",
+        "type": "TileType.WALL"
+      }
+    ],
+    [
+      {
+        "_jsontype_": "HexTile",
+        "a": 0,
+        "r": -1,
+        "c": 2
+      },
+      {
+        "_jsontype_": "TileType",
+        "type": "TileType.WALL"
+      }
+    ],
+    [
+      {
+        "_jsontype_": "HexTile",
+        "a": 1,
+        "r": 0,
+        "c": -1
+      },
+      {
+        "_jsontype_": "TileType",
+        "type": "TileType.NORMAL"
+      }
+    ],
+    [
+      {
+        "_jsontype_": "HexTile",
+        "a": 1,
+        "r": 0,
+        "c": -2
+      },
+      {
+        "_jsontype_": "TileType",
+        "type": "TileType.NORMAL"
+      }
+    ],
+    [
+      {
+        "_jsontype_": "HexTile",
+        "a": 0,
+        "r": 1,
+        "c": -2
+      },
+      {
+        "_jsontype_": "TileType",
+        "type": "TileType.NORMAL"
+      }
+    ],
+    [
+      {
+        "_jsontype_": "HexTile",
+        "a": 0,
+        "r": 1,
+        "c": -1
+      },
+      {
+        "_jsontype_": "TileType",
+        "type": "TileType.WALL"
+      }
+    ],
+    [
+      {
+        "_jsontype_": "HexTile",
+        "a": 1,
+        "r": 1,
+        "c": -2
+      },
+      {
+        "_jsontype_": "TileType",
+        "type": "TileType.NORMAL"
+      }
+    ],
+    [
+      {
+        "_jsontype_": "HexTile",
+        "a": 1,
+        "r": 1,
+        "c": -1
+      },
+      {
+        "_jsontype_": "TileType",
+        "type": "TileType.END"
+      }
+    ],
+    [
+      {
+        "_jsontype_": "HexTile",
+        "a": 1,
+        "r": 1,
+        "c": 0
+      },
+      {
+        "_jsontype_": "TileType",
+        "type": "TileType.NORMAL"
+      }
+    ],
+    [
+      {
+        "_jsontype_": "HexTile",
+        "a": 0,
+        "r": 1,
+        "c": 1
+      },
+      {
+        "_jsontype_": "TileType",
+        "type": "TileType.NORMAL"
+      }
+    ],
+    [
+      {
+        "_jsontype_": "HexTile",
+        "a": 1,
+        "r": 0,
+        "c": 1
+      },
+      {
+        "_jsontype_": "TileType",
+        "type": "TileType.NORMAL"
+      }
+    ],
+    [
+      {
+        "_jsontype_": "HexTile",
+        "a": 1,
+        "r": 0,
+        "c": 2
+      },
+      {
+        "_jsontype_": "TileType",
+        "type": "TileType.NORMAL"
+      }
+    ],
+    [
+      {
+        "_jsontype_": "HexTile",
+        "a": 0,
+        "r": 1,
+        "c": 2
+      },
+      {
+        "_jsontype_": "TileType",
+        "type": "TileType.WALL"
+      }
+    ],
+    [
+      {
+        "_jsontype_": "HexTile",
+        "a": 1,
+        "r": 0,
+        "c": 0
+      },
+      {
+        "_jsontype_": "TileType",
+        "type": "TileType.WALL"
+      }
+    ],
+    [
+      {
+        "_jsontype_": "HexTile",
+        "a": 1,
+        "r": 1,
+        "c": 1
+      },
+      {
+        "_jsontype_": "TileType",
+        "type": "TileType.WALL"
+      }
+    ],
+    [
+      {
+        "_jsontype_": "HexTile",
+        "a": 0,
+        "r": 1,
+        "c": 0
+      },
+      {
+        "_jsontype_": "TileType",
+        "type": "TileType.WALL"
+      }
+    ],
+    [
+      {
+        "_jsontype_": "HexTile",
+        "a": 0,
+        "r": 0,
+        "c": -1
+      },
+      {
+        "_jsontype_": "TileType",
+        "type": "TileType.WALL"
+      }
+    ],
+    [
+      {
+        "_jsontype_": "HexTile",
+        "a": 0,
+        "r": 0,
+        "c": -2
+      },
+      {
+        "_jsontype_": "TileType",
+        "type": "TileType.NORMAL"
+      }
+    ],
+    [
+      {
+        "_jsontype_": "HexTile",
+        "a": 1,
+        "r": 1,
+        "c": 2
+      },
+      {
+        "_jsontype_": "TileType",
+        "type": "TileType.WALL"
+      }
+    ]
+  ],
+  "start": {
+    "_jsontype_": "HexTile",
+    "a": 1,
+    "r": -1,
+    "c": 0
+  },
+  "end": {
+    "_jsontype_": "HexTile",
+    "a": 1,
+    "r": 1,
+    "c": -1
+  }
+}
