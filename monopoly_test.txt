@@ -1,0 +1,32 @@
+1 A1_Mediterraneal_Avenue 0 0 A
+3 A2_Baltic_Avenue 0 0
+5 R1_Reading_railroad 0 0 D
+6 B1_Oriental_Avenue 0 0
+8 B2_Vermont_Avenue 0 0 C
+9 B3_Connecticut_Avenue 0 0 A
+11 C1_St.Charle's_Place 0 0 D
+12 U1_Electric_Company 0 0 D
+13 C2_States_Avenue 0 0
+14 C3_Virginia_Avenue 0 0 A
+15 R2_Pennsylvania_Railroad 0 0 B
+16 D1_St.James_Place 0 0 C
+18 D2_Tennessee_Avenue 0 0 D
+19 D3_New_York_Avenue 0 0
+21 E1_Kentucky_Avenue 0 0 D
+23 E2_Indiana_Avenue 0 0 A
+24 E3_Illinois_Avenue 0 0 D
+25 R3_BnO_Railroad 0 0
+26 F1_Atlantic_Avenue 0 0 B
+27 F2_Ventinor_Avenue 0 0
+28 U2_Waterworks 0 0
+29 F3_Martin_Gardens 0 0 D
+31 G1_Pacific_Avenue 0 0 A
+32 G2_North_Carolina_Avenue 0 0
+34 G3_Pennsylvania_Avenue 0 0
+35 R4_Short_Line 0 0
+37 H1_Park_Place 0 0 D
+39 H2_Boardwalk 0 0
+A 1373 9
+B 1375 26
+C 1919 29
+D 735 24

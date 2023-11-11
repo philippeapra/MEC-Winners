@@ -6,7 +6,6 @@ monopoly_properties = {
     "Oriental_Avenue": 100,
     "Vermont_Avenue": 100,
     "Connecticut_Avenue": 120,
-    #"Jail/Just_Visiting": None,  # Jail doesn't have a monetary value
     "Pennsylvania_Railroad": 200,
     "St.Charle's_Place": 140,
     "Electric_Company": 150,
@@ -15,7 +14,6 @@ monopoly_properties = {
     "St.James_Place": 180,
     "Tennessee_Avenue": 180,
     "New_York_Avenue": 200,
-    #"Free_Parking": None,  # Free Parking typically doesn't have a monetary value
     "Kentucky_Avenue": 220,
     "Indiana_Avenue": 220,
     "Illinois_Avenue": 240,
@@ -24,13 +22,11 @@ monopoly_properties = {
     "Ventinor_Avenue": 260,
     "Waterworks": 150,
     "Martin_Gardens": 280,
-    #"Go_to_Jail": None,  # "Go to Jail" space typically doesn't have a monetary value
     "Pacific_Avenue": 300,
     "North_Carolina_Avenue": 300,
     "Pennsylvania_Avenue": 320,
     "Short_Line": 200,
     "Park_Place": 350,
-    #"Luxury_Tax": None,  # Luxury Tax spaces typically don't have a fixed monetary value
     "Boardwalk": 400
 }
 
@@ -71,7 +67,11 @@ def parse_game(lines):
             total_price += extract_player(line)
 
     #print(total_price/4)
-    return total_price/4
+    if total_price/4 > 2500:
+        return 2500
+    elif total_price/4 < 500:
+        return 500
+    return total_price/4 
 
 
 values = []
@@ -84,6 +84,6 @@ with open("in.txt", "r") as file:
     for i in range(0, len(all_lines), 32):
         values.append(parse_game(all_lines[i:i+32]))
 
-with open("out.txt", "w") as output_file:
+with open("monopoly/out.txt", "w") as output_file:
     for value in values:
         output_file.write(str(int(value)) + "\n")
