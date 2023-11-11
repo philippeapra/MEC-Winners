@@ -83,12 +83,39 @@ base2_num = base17_to_base2(base17_num)
 print(base2_num)
 
 
-def create_a_4_by_x_matrix(base2_num):
+def create_a_x_by_4_matrix(base2_num):
+    # print(base2_num)
+    # length = len(base2_num)
+    #
+    # if length % 4 != 0:
+    #     return "Invalid input. Not a base 2 number."
+    #
+    # matrix = [[], [], [], []]
+    #
+    # for i in range(0, length):
+    #     if i < length / 4:
+    #         matrix[0].append(int(base2_num[i]))
+    #     elif i < length / 2:
+    #         matrix[1].append(int(base2_num[i]))
+    #     elif i < length * 3 / 4:
+    #         matrix[2].append(int(base2_num[i]))
+    #     else:
+    #         matrix[3].append(int(base2_num[i]))
+    #
+    # return matrix
+
     matrix = []
     for i in range(0, len(base2_num), 4):
         matrix.append([int(base2_num[i]), int(base2_num[i + 1]), int(base2_num[i + 2]), int(base2_num[i + 3])])
-    return matrix
 
+
+
+print(create_a_x_by_4_matrix(ascii_to_binary("Hello world!")))
+
+def multiply_matrix(matrix1, matrix2):
+    return np.matmul(matrix1, matrix2)
+
+print(multiply_matrix(create_a_x_by_4_matrix(ascii_to_binary("Hello world!")), four_by_four_vector))
 
 print(len(base17_to_base2("11d48ed9dCQIc6ab6c6147d845e586da03b9".replace("CQI", "G").upper())))
 

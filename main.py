@@ -6,7 +6,7 @@ import string
 
 tiles = []
 
-filename = "labyrinth_86.json"
+filename = "labyrinth_00.json"
 
 json_file = open(filename, "r")
 json_file = json.load(json_file)
@@ -86,7 +86,15 @@ def find_shortest_path(links, start_node, end_node):
 start_node = "start"
 end_node = "end"
 shortest_path = find_shortest_path(links, start_node, end_node)
+
+shortest_path_nodes = []
+
+for node in shortest_path:
+    for tile in tiles:
+        if node == tile.get("id"):
+            shortest_path_nodes.append((tile.get("a"), tile.get("c"), tile.get("r")))
+
 if shortest_path:
-    print("Shortest path:", shortest_path)
+    print("Shortest path:", shortest_path_nodes)
 else:
     print("No path found from {} to {}".format(start_node, end_node))
