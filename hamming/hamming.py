@@ -37,19 +37,30 @@ def binary_to_string(binary_string):
 
 
 output_file_name = 'out.txt'
+outputs = []
 
 with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), 'in.txt'), 'r') as input_file:
-    content = input_file.read().split(':')
-    permutation_matrix_string = content[0]
-    base17_string = content[1].replace("CQI", "G").upper()
+    for line in input_file:
+        content = line.strip().split(':')
+        print(content)
+        permutation_matrix_string = content[0]
+        base17_string = content[1].replace("CQI", "G").upper()
 
-    binary_string = base17_to_binary(base17_string)
-    reverse_matrix = reverse_permutation_matrix(permutation_matrix_string)
-    reversed_binary = apply_reverse_permutation(binary_string, reverse_matrix)
-    decoded_string = binary_to_string(reversed_binary)
-    print(decoded_string)
+        binary_string = base17_to_binary(base17_string)
+        reverse_matrix = reverse_permutation_matrix(permutation_matrix_string)
+        reversed_binary = apply_reverse_permutation(binary_string, reverse_matrix)
+        decoded_string = binary_to_string(reversed_binary)
+        outputs.append(decoded_string)
 
-    with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), output_file_name), 'w') as output_file:
-        output_file.write(decoded_string)
+        with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), output_file_name), 'w', encoding='utf-8') as output_file:
+            for output in outputs:
+                """
+                try:
+                    output_file.write(output + "\n")
+                except UnicodeEncodeError:
+                    output_file.write("null\n")
+                """
+                output_file.write(output + "\n")
+
 
 
