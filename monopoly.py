@@ -65,4 +65,4 @@ def main(file_path):
     print(f"Estimated starting money: ${starting_money}")
 
 # Replace 'file_path.csv' with the actual path to the game status file
-main('path/to/game_data.txt')
+main('in.txt')
