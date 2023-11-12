@@ -1,5 +1,6 @@
 import numpy as np
 import os
+import string
 
 def base17_to_binary(base17_string):
     decimal_value = int(base17_string, 17)
@@ -29,7 +30,6 @@ def apply_reverse_permutation(binary_string, permutation_matrix):
 
     return reversed_string
 
-
 def binary_to_string(binary_string):
     bytes = [binary_string[i:i + 8] for i in range(0, len(binary_string), 8)]
     characters = [chr(int(byte, 2)) for byte in bytes if int(byte, 2) != 0]
@@ -39,10 +39,17 @@ def binary_to_string(binary_string):
 output_file_name = 'out.txt'
 outputs = []
 
-with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), 'in.txt'), 'r') as input_file:
+def is_valid_string(input_str):
+    # Define a set of allowed characters (alphanumeric, space, and common punctuation)
+    allowed_characters = set(string.ascii_letters + string.digits + string.punctuation + 'àâçéèêëîïôûùüÿæœÀÂÇÉÈÊËÎÏÔÛÙÜŸÆŒ' + ' ')
+
+    # Check if all characters in the string are in the set of allowed characters
+    return all(char in allowed_characters for char in input_str)
+
+with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), 'in.txt'), 'r', encoding='utf-8') as input_file:
     for line in input_file:
         content = line.strip().split(':')
-        print(content)
+        #print(content)
         permutation_matrix_string = content[0]
         base17_string = content[1].replace("CQI", "G").upper()
 
@@ -60,7 +67,11 @@ with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), 'in.txt'), '
                 except UnicodeEncodeError:
                     output_file.write("null\n")
                 """
-                output_file.write(output + "\n")
+
+                if is_valid_string(output.strip()):
+                    output_file.write(output + "\n")
+                else:
+                    output_file.write("\n")
 
 
 
