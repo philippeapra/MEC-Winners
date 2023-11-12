@@ -41,7 +41,7 @@ outputs = []
 
 with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), 'in.txt'), 'r') as input_file:
     for line in input_file:
-        content = line.strip().split(':')
+        content = line.strip( ).split(':')
         print(content)
         permutation_matrix_string = content[0]
         base17_string = content[1].replace("CQI", "G").upper()

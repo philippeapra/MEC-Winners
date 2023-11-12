@@ -52,9 +52,6 @@ def do_maze(filename_raw):
                     if tile.get("c") == neighbor.get("c") - 1 or tile.get("c") == neighbor.get("c") + 1:
                         links.append((tile.get("id"), neighbor.get("id")))
 
-                print(tile.get("id"), neighbor.get("id"))
-
-    print(json.dumps(links, indent=4))
 
     def find_shortest_path(links, start_node, end_node):
         # Create an adjacency list to represent the graph
@@ -107,7 +104,8 @@ def do_maze(filename_raw):
     with open(os.path.join(os.path.dirname(__file__), "./out/"+filename_raw.replace('.json', '.txt')), "w") as f:
         # put each tile on a new line
         for tile in shortest_path_nodes:
-            f.write(json.dumps(tile) + "\n")
+            ## format should be (a, r, c)
+            f.write(str(tile) + "\n")
 
 
 
